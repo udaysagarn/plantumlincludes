@@ -5,8 +5,18 @@
 'Refer https://github.com/awslabs/aws-icons-for-plantuml/tree/main/examples
 
 
-' Uncomment the following line to create simplified view
+'Include the following line
 '!include AWSPuml/AWSCommon.puml
+'!include AWSPuml/ApplicationIntegration/SimpleQueueService.puml
+'!include AWSPuml/BusinessApplications/all.puml
+'!include AWSPuml/Storage/SimpleStorageServiceS3.puml
+'!include AWSPuml/MachineLearning/SageMakerModel.puml
+'!include AWSPuml/General/Users.puml
+'!include AWSPuml/ApplicationIntegration/APIGateway.puml
+'!include AWSPuml/SecurityIdentityCompliance/Cognito.puml
+'!include AWSPuml/Compute/Lambda.puml
+'!include AWSPuml/Database/DynamoDB.puml
+
 '!include AWSPuml/AWSSimplified.puml
 'include C4-PlantUML
 
