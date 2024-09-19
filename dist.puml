@@ -1,0 +1,341 @@
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist/AWSCommon.puml
+'Refer https://github.com/awslabs/aws-icons-for-plantuml?tab=readme-ov-file#basic-usage
+'Refer https://github.com/awslabs/aws-icons-for-plantuml/tree/main/examples
+
+!include AWSPuml/AWSCommon.puml
+' Uncomment the following line to create simplified view
+' !include AWSPuml/AWSSimplified.puml
+
+'include C4
+!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+skinparam shadowing false
+skinparam roundCorner 3
+skinparam sequence {
+	LifeLine {
+		BorderColor #356797
+		BackgroundColor #C7D5E2
+		BorderThickness 1
+	}
+	Box {
+		BorderColor #AAAAAA
+		BackgroundColor #FFFFFF
+		Padding 20
+		FontName Arial
+		FontSize 14
+		FontStyle bold
+		FontColor #777777
+	}
+	Participant {
+		BorderColor #556F9A
+		BackgroundColor #F1F4F8
+		Padding 20
+		FontName Arial
+		FontSize 16
+		FontStyle bold
+		FontColor #556F9A
+	}
+	Actor {
+		BorderColor #977972
+		BackgroundColor #FED8D9
+		FontColor #977972
+		FontSize 17
+		FontName Arial
+	}
+	Reference {
+		BackgroundColor #fff6e0
+		FontColor #8E724B
+		HeaderBackgroundColor #FFE296
+		BorderColor #8E724B
+		HeaderFontColor #8E724B
+	}
+	Group {
+		BackgroundColor #EDFED8
+		HeaderFontColor #777
+		BorderColor #627D2C
+		FontColor #627D2C
+	}
+	Divider {
+		BackgroundColor #638AAF
+		BorderColor #356797
+		FontColor #F1F4F8
+	}
+}
+
+skinparam Note {
+	BackgroundColor #FFE296
+	FontColor #8E724B
+	BorderColor #8E724B
+}
+
+skinparam Arrow {
+	Color #556F9A
+	Thickness 1
+	Font {
+		Name Arial
+		Color #AAAAAA
+		Style bold
+		Size 12
+	}
+}
+skinparam LineColor #556F9A
+skinparam Frame {
+	BackgroundColor #EDFED8
+	BorderColor #627D2C
+	FontColor #627D2C
+}
+skinparam Package {
+	BackgroundColor #C7D5E2
+	BorderColor #556F9A
+	FontColor #556F9A
+}
+skinparam Component {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Database {
+	BorderColor #356797
+	BackgroundColor #638AAF
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #C1C4C8
+	}
+}
+skinparam Card {
+	BorderColor #356797
+	BackgroundColor #638AAF
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #F1F4F8
+	}
+}
+skinparam Node {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Artifact {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Cloud {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Folder {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Rectangle {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Storage {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Interface {
+	BorderColor #556F9A
+	BackgroundColor #C7D5E2
+	Font {
+		Name Arial
+		Size 12
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Agent {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Boundary {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Control {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Entity {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Queue {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Stack {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam Usecase {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam File {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Font {
+		Name Arial
+		Size 16
+		Style bold
+		Color #556F9A
+	}
+}
+skinparam class {
+	BackgroundColor #F1F4F8
+	BorderColor #556F9A
+	Padding 20
+	FontName Arial
+	FontSize 16
+	FontStyle bold
+	FontColor #556F9A
+	
+	header {
+	 BackgroundColor #C7D5E2
+	}
+	
+	attribute {
+	 FontName Monospaced
+		FontSize 12
+		FontStyle regular
+		FontColor #777777
+	}
+	
+	stereotype {
+	 FontName Arial
+		FontSize 10
+		FontStyle bold
+		FontColor #777777
+	}
+}
+skinparam CircledCharacter {
+	FontName Arial
+	FontSize 16
+	Radius 10
+	FontStyle bold
+}
+skinparam Activity {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	Padding 20
+	FontName Arial
+	FontSize 14
+	FontStyle bold
+	FontColor #556F9A
+	
+	BarColor #556F9A
+	
+	StartColor #977972
+	EndColor #627D2C
+	
+	Diamond {
+		BackgroundColor #C7D5E2
+		BorderColor #356797
+		FontColor #556F9A
+		FontName Arial
+		FontSize 12
+	}
+}
+skinparam State {
+	BorderColor #556F9A
+	BackgroundColor #F1F4F8
+	FontName Arial
+	FontSize 14
+	FontColor #556F9A
+	FontStyle bold
+	StartColor #627D2C
+	EndColor #80403D
+	Attribute {
+		FontColor #16191f
+		FontStyle bold
+		FontSize 11
+	}
+}
