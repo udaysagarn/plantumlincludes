@@ -1,13 +1,15 @@
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist/AWSCommon.puml
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist
+!define C4-PlantUML  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
 'Refer https://github.com/awslabs/aws-icons-for-plantuml?tab=readme-ov-file#basic-usage
 'Refer https://github.com/awslabs/aws-icons-for-plantuml/tree/main/examples
 
-!include AWSPuml/AWSCommon.puml
-' Uncomment the following line to create simplified view
-' !include AWSPuml/AWSSimplified.puml
 
-'include C4
-!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+' Uncomment the following line to create simplified view
+'!include AWSPuml/AWSCommon.puml
+'!include AWSPuml/AWSSimplified.puml
+'include C4-PlantUML
+
 
 skinparam shadowing false
 skinparam roundCorner 3
